@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>BlazeMeter Transaction Popup</title>
+    <link rel="stylesheet" type="text/css" href="../jquery/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="../css/transaction-ui.css">
+    <link rel="stylesheet" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="../dist/browser-polyfill.min.js"></script>
+    <script src="../jquery/jquery-3.3.1.min.js"></script>
+    <script src="../jquery/jquery-ui.min.js"></script>
+    <script src="../js/transaction-ui.js"></script>
+</head>
+<body>
+<div id="transaction-content">
+    <div id="transaction-list">
+        <div class="list-title">
+            <span class="transaction-title">
+                <label>Test case(s) / Label(s)</label>
+                <i
+                    class="hint fa fa-info-circle"
+                    title="
+Transaction Labels functionality are implemented for following files:
+   -  all files (YAML, Taurus, JMX) of HTTP recording
+   -  only YAML, JSON files of Selenium recording
+   -  combined Jmeter and Selenium YAML file
+
+Structure your recorded script on the fly while recording. The names will show up as Test Cases in GUI Functional Test reports (Selenium script) and as Labels in Performance Test reports (JMeter) in BlazeMeter."
+                >
+                </i>
+            </span>
+            <span class="counter-description">UI | JMX</span>
+        </div>
+        <p class="help-text"></p>
+        <ul id="transactions">
+        </ul>
+    </div>
+    <div class="footer transaction-bottom">
+        <input type="text" id="transaction_name" disabled/>
+        <button id="save-transaction" class="disabled" disabled>Add Step</button>
+    </div>
+</div>
+</body>
+</html>
