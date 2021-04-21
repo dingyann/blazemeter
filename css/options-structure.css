@@ -1,0 +1,245 @@
+body, html {
+    height: 100%;
+    background: #f5f5f5;
+    margin: 0;
+    overflow: hidden;
+}
+header {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    z-index: 1010;
+}
+.header-container {
+    height: 40px;
+}
+.header-logo {
+    background-repeat: no-repeat;
+    background-size: 156px 30px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 30px;
+    left: 15px;
+    position: relative;
+    top: 5px;
+    vertical-align: middle;
+    width: 192px;
+}
+
+.btn.btn-primary {
+    background-color: #4488d9;
+    color: #fff;
+    cursor: pointer;
+    border-color: transparent;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    float: right;
+    font-weight: 400;
+    line-height: .8;
+    outline: none;
+    height: 30px;
+    width: 140px;
+    margin: 5px 20px 5px 5px;
+    font-size: 12px;
+    padding: .4em .57em;
+    position: relative;
+    text-align: center;
+    z-index: 0;
+}
+
+.btn.btn-primary:hover {
+    color: #fff;
+    background: #669ddc;
+}
+
+.bzm-options-static {
+    background-color: #fff;
+    -webkit-box-shadow: 0 4px 10px 1px rgba(200,216,226,.42);
+    box-shadow: 0 4px 10px 1px rgba(200,216,226,.42);
+    clear: both;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    position: relative;
+    width: 100%;
+}
+
+.options-container {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    height: 25px;
+    text-transform: none;
+    vertical-align: middle;
+}
+
+button#save, button#reset {
+    float: left;
+}
+
+.boxes {
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 10px 1px rgba(200,216,226,.42);
+    box-shadow: 0 0 10px 1px rgba(200,216,226,.42);
+    height: 100%;
+    overflow-y: hidden;
+    padding: 20px;
+    vertical-align: top;
+    margin: 20px;
+}
+
+.check {
+    width: 200px;
+    float: left;
+    clear: both;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.check label {
+    cursor: pointer;
+    display: block;
+    margin-left: 30px;
+    margin-top: 4px;
+}
+
+input[type=checkbox] {
+    cursor: pointer;
+    height: 21px;
+    line-height: 1;
+    opacity: 0;
+    position: absolute;
+    z-index: 0;
+    padding: 11px;
+    vertical-align: middle;
+    width: 21px;
+}
+
+.ico {
+    background: #ecf2fa;
+    border-radius: 3px;
+    display: inline-block;
+    left: 0;
+    line-height: 1.5;
+    margin: 1px;
+    z-index: 1;
+    pointer-events: none;
+    box-shadow: inset 0 0 0 1px #e4e4e5;
+    height: 21px;
+    width: 21px;
+    float: left;
+    text-align: center;
+    top: 3px;
+}
+
+.ico:before {
+    color: #fff;
+    font-family: FontAwesome;
+    content: "";
+}
+
+input:checked~ .ico:before {
+    content: "\f00c";
+    font-size: 15px;
+    padding-right: 2px;
+}
+
+input:checked~ .ico{
+    background: #4488d9;
+    -webkit-box-shadow: 0 0 0 1px #4488d9 inset;
+    box-shadow: inset 0 0 0 1px #4488d9;
+}
+
+.wrapper {
+    float: left;
+    width: 100%;
+    min-height: 30px;
+    font-size: 13px;
+    color: gray;
+}
+
+input[type=text] {
+    height: 30px;
+    display: block;
+    clear: left;
+    margin: 10px;
+    padding: 5px;
+    color: gray;
+    border: 1px solid #ecf2fa;
+}
+
+input[type=text]:focus {
+    outline:none;
+}
+
+.msg {
+    position: absolute;
+    right: -10000px;
+    top: 50px;
+    z-index: 999;
+    width: fit-content;
+    margin-left: 6000px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 15px;
+    padding-right: 30px !important;
+}
+
+.has-error{
+    border-color: #dd4343 !important;
+}
+
+#success, #reset-success {
+    color: #3c763d;
+    background: #dff0d8;
+    border: 1px solid transparent;
+}
+
+#error {
+    color: #8a6d3b;
+    border: 1px solid #faebcc;
+    background: #fcf8e3;
+}
+
+.close-success {
+    color: #95aa97;
+}
+
+.close-error {
+    color: #8a6d3b;
+}
+
+.close {
+    right: 0;
+    position: absolute;
+    padding: 5px 15px 0 15px;
+    top: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#success span, #error span {
+    margin: auto;
+}
+
+#success span:before {
+    font-family: FontAwesome;
+    content: "\f058";
+    margin-right: 10px;
+}
+
+#error span:before {
+    font-family: FontAwesome;
+    content: "\f071";
+    margin-right: 10px;
+}
+
+.required span {
+    color: #dd4343;;
+}

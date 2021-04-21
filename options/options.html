@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <title>Options - BlazeMeter | The Continuous Testing Platform</title>
+</head>
+<link id="favicon" rel="shortcut icon" type="image/png" href="" />
+<link rel="stylesheet" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../css/options-structure.css">
+<body>
+<header>
+    <div class="header-container">
+        <a class="header-logo" href="#/" title="Go to dashboard" aria-label="Go to dashboard"></a>
+        <button type="button" class="close-page btn btn-primary"> Close</button>
+    </div>
+</header>
+
+<div class="bzm-options-static">
+    <span class="options-container">
+        <span class="options-wrapper">
+            <span class="options-name">Options</span>
+        </span>
+    </span>
+</div>
+
+
+<div class="boxes">
+
+    <div class="msg" id="success"><span>Options saved successfully.</span><div class="close close-success">x</div> </div>
+    <div class="msg" id="reset-success"><span>Options reset successfully.</span><div class="close close-reset">x</div> </div>
+    <div class="msg" id="error"><span></span><div class="close close-success">x</div> </div>
+
+
+    <!-- Debug mode -->
+    <div class="wrapper">
+        <div class="check">
+            <input type="checkbox" id="debug" />
+            <i class="ico"></i>
+            <label for="debug">Enable Debug mode</label>
+        </div>
+    </div>
+
+    <!-- Custom server URL -->
+    <div class="wrapper">
+        <div class="check">
+            <input type="checkbox" id="custom_server" />
+            <i class="ico"></i>
+            <label class="required required-server" for="custom_server">Custom Server Url <span hidden>*</span></label>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="server_url" style="display: none">
+            <label for="server"></label>
+            <input size=50 value="" type="text" id="server" />
+        </div>
+    </div>
+
+    <!-- Custom ARD URL -->
+    <div class="wrapper">
+        <div class="check">
+            <input type="checkbox" id="custom_ard_url">
+            <i class="ico"></i>
+            <label for="custom_ard_url" class="required">Custom ARD URL <span hidden>*</span></label>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="ard_url" style="display: none">
+            <label for="ard_server_url"></label>
+            <input type="text" size="50" id="ard_server_url" value="">
+        </div>
+    </div>
+
+    <!-- Server converter -->
+    <div class="wrapper">
+        <div class="server_converter">
+            <label class="required" for="serverJmx">Server Converter <span>*</span></label>
+            <input size=50 type="text" id="serverJmx" />
+        </div>
+    </div>
+
+    <br/>
+    <button class="btn btn-primary" id="save">Save</button>
+    <button class="btn btn-primary" id="reset">Reset</button>
+</div>
+<script src="../jquery/jquery-3.3.1.min.js"></script>
+<script src="../js/common.js"></script>
+</body>
+
+</html>

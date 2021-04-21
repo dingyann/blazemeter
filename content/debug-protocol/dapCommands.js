@@ -1,0 +1,21 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.PAUSE = 'pause';
+exports.RESUME = 'resume';
+exports.STEP_IN = 'stepIn';
+exports.STEP_OUT = 'stepOut';
+exports.TERMINATE = 'terminate';
+exports.LAUNCH = 'launch';
+exports.NEXT = 'next';
+exports.CONTINUE = 'continue';
+exports.INITIALIZE = 'initialize';
+exports.UPDATE_MODEL = 'updateModel';
+exports.SET_BREAKPOINT = 'setBreakpoint';
+exports.SET_IS_SKIPPED = 'setIsSkipped';
+exports.EXECUTE_STEP = 'executeStep';
+exports.PICK_OBJECT = 'pickObject';
+exports.CANCEL_PICK_OBJECT = 'cancelPickObject';
+exports.HIGHLIGHT_OBJECT = 'highlightObject';
+exports.READ_VARIABLES = 'readVariables';
+exports.SET_VARIABLE = 'setVariable';
+//# sourceMappingURL=dapCommands.js.map
